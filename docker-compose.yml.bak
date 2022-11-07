@@ -1,0 +1,18 @@
+web:
+ image: nginx:1.19-alpine
+ ports:
+ - "880:80"
+ volumes:
+ - ./code:/code
+# - ./nginx/sites/:/etc/nginx/sites-available
+ - ./nginx/sites/:/etc/nginx/conf.d
+#- ./test_site.conf:/etc/nginx/conf.d/test_site.conf
+ #- ./test1_site.conf:/etc/nginx/conf.d/test1_site.conf
+ #- ./mvc_example.conf:/etc/nginx/conf.d/mvc_example.conf
+ links:
+ - php
+
+php:
+ image: php:8.1-fpm
+ volumes:
+ - ./code:/code

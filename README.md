@@ -3,5 +3,6 @@
 ## Con soporte para devcontainers 
 ###TODO LIST
 -   Add db service
+-   Create .env file
 
 

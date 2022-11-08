@@ -2,4 +2,6 @@
 ## Este esqueleto docker sirve para levantar un entorno de desarrollo rapido en php
 ## Con soporte para devcontainers 
 ###TODO LIST
+-   Add db service
+
 

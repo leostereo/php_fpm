@@ -4,5 +4,5 @@
 ###TODO LIST
 -   Add db service
 -   Create .env file
-
+-   Crear red para el docker-compose
 
